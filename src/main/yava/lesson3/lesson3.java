@@ -10,7 +10,6 @@ public class lesson3 {
      если уравнение имеет два корня, то вывести их в строку через пробел (для одного корня, достаточно одного значения).
       */
     public static void main(String[] args) {
-
         System.out.println("Решим квадратное уравнение вида:");
         System.out.println("ax^2 + bx + c = 0");
   /* Для начала находим дискриминант по формуле d = b2 - 4ac:
@@ -18,40 +17,30 @@ public class lesson3 {
     -Если d = 0, уравнение имеет один корень. x = - b / 2 a
     -Если d < 0, уравнение не имеет корней.
      */
-
         int a;
-        a = -1;
+        a = 1;
         int b;
         b = 7;
         int c;
         c = -9;
         System.out.println("пусть a = " + a + ", b = " + b + ", c = " + c);
-
+        if (a == 0) {
+            System.out.println("Первый коэффициент не может быть 0");// Показать вывод значения
+            return;
+        }
         double d = b * b - 4 * a * c;
         System.out.println("Дискриминант = " + d);
-
-        if (d>0) {
+        if (d > 0) {
             double x1 = (-b - Math.sqrt(d)) / (2 * a);
             double x2 = (-b + Math.sqrt(d)) / (2 * a);
             System.out.println("Корни уравнения: x1 = " + x1 + ", x2 = " + x2);
         }
         if (d == 0) {
-            double x;
-            x = -b / (2 * a);
+            double x = -b / (2 * a);
             System.out.println("Один корень");// Показать вывод значения
         }
-           if (d < 0) {
+        if (d < 0) {
             System.out.println("Нет действительных решений уравнения");// Показать вывод значения
         }
-           boolean m = ( a == 0);
-           if (m)
-               System.out.println("Первый коэффициент не может быть 0");// Показать вывод значения
-
-           }
     }
-
-
-
-
-
-
+}
