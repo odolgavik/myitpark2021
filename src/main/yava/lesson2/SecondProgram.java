@@ -19,7 +19,6 @@ public class SecondProgram {
         long every = degree(5, 10);
         System.out.println("Число 5 умножить на 10 равно " + every);
     }
-
     /**
      * Метод будет производить арифметические действия
      * param arg1 искомое число 1
@@ -30,19 +29,15 @@ public class SecondProgram {
         int result = arg1 + arg2;
         return result;
     }
-
     public static long subtraction(int arg1, int arg2) {
         return arg1 - arg2;
     }
-
     public static long degree(int arg1, int arg2) {
         return arg1 * arg2;
     }
-
     public static long divizion(int arg1, int arg2) {
         return arg1 / arg2;
     }
-
     public static long algebra(int arg1) {
         return arg1 * 2 + 7;
     }
