@@ -18,17 +18,19 @@ public class lesson3 {
     -Если d = 0, уравнение имеет один корень. x = - b / 2 a
     -Если d < 0, уравнение не имеет корней.
      */
-        System.out.println("пусть a = 52, b = 7, c = -10");
+
         int a;
-        a = 52;
-        int b = 7;
-        int c = -10;
+        a = -1;
+        int b;
+        b = 7;
+        int c;
+        c = -9;
+        System.out.println("пусть a = " + a + ", b = " + b + ", c = " + c);
 
         double d = b * b - 4 * a * c;
         System.out.println("Дискриминант = " + d);
 
-        if (d > 0) {
-
+        if (d>0) {
             double x1 = (-b - Math.sqrt(d)) / (2 * a);
             double x2 = (-b + Math.sqrt(d)) / (2 * a);
             System.out.println("Корни уравнения: x1 = " + x1 + ", x2 = " + x2);
@@ -38,16 +40,15 @@ public class lesson3 {
             x = -b / (2 * a);
             System.out.println("Один корень");// Показать вывод значения
         }
-        if (d < 0) {
+           if (d < 0) {
             System.out.println("Нет действительных решений уравнения");// Показать вывод значения
         }
-        switch (a = 0) {
-            case 1: System.out.println("Первый коэффициент не может быть 0");// Показать вывод значения
+           boolean m = ( a == 0);
+           if (m)
+               System.out.println("Первый коэффициент не может быть 0");// Показать вывод значения
 
-        }
+           }
     }
-
-}
 
 
 
