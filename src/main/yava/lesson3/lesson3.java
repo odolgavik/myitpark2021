@@ -18,7 +18,7 @@ public class lesson3 {
     -Если d < 0, уравнение не имеет корней.
      */
         int a;
-        a = 1;
+        a = -121;
         int b;
         b = 7;
         int c;
@@ -29,6 +29,10 @@ public class lesson3 {
             return;
         }
         double d = b * b - 4 * a * c;
+        if (d < 0) {
+            System.out.println("Нет действительных решений уравнения");
+            return;
+        }
         System.out.println("Дискриминант = " + d);
         if (d > 0) {
             double x1 = (-b - Math.sqrt(d)) / (2 * a);
@@ -38,9 +42,6 @@ public class lesson3 {
         if (d == 0) {
             double x = -b / (2 * a);
             System.out.println("Один корень");// Показать вывод значения
-        }
-        if (d < 0) {
-            System.out.println("Нет действительных решений уравнения");// Показать вывод значения
         }
     }
 }
