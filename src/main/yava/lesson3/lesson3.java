@@ -18,7 +18,7 @@ public class lesson3 {
     -Если d < 0, уравнение не имеет корней.
      */
         int a;
-        a = -121;
+        a = 1;
         int b;
         b = 7;
         int c;
@@ -28,20 +28,20 @@ public class lesson3 {
             System.out.println("Первый коэффициент не может быть 0");// Показать вывод значения
             return;
         }
-        double d = b * b - 4 * a * c;
-        if (d < 0) {
-            System.out.println("Нет действительных решений уравнения");
+        double diskriminant = b * b - 4 * a * c;
+        if (diskriminant < 0) {
+            System.out.println("При указанных переменных нет действительных решений уравнения");
             return;
         }
-        System.out.println("Дискриминант = " + d);
-        if (d > 0) {
-            double x1 = (-b - Math.sqrt(d)) / (2 * a);
-            double x2 = (-b + Math.sqrt(d)) / (2 * a);
-            System.out.println("Корни уравнения: x1 = " + x1 + ", x2 = " + x2);
+        System.out.println("Дискриминант = " + diskriminant);
+        if (diskriminant > 0) {
+            double x1 = (-b - Math.sqrt(diskriminant)) / (2 * a);
+            double x2 = (-b + Math.sqrt(diskriminant)) / (2 * a);
+            System.out.println("При таких значениях аргументов найдено 2 корня уравнения: x1 = " + x1 + ", x2 = " + x2);
         }
-        if (d == 0) {
+        if (diskriminant == 0) {
             double x = -b / (2 * a);
-            System.out.println("Один корень");// Показать вывод значения
+            System.out.println("Найден единственный корень и он равен " + x);// Показать вывод значения
         }
     }
 }
