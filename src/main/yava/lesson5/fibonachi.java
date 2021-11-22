@@ -15,10 +15,10 @@ public class fibonachi {
         int n0 = 0;
         int n1 = 1;
         for (int i = 2; i <= n; i++) {
-         int n2 = n0 + n1;
+            int n2 = n0 + n1;
             n0 = n1;
             n1 = n2;
         }
-        System.out.println("Порядковый номер числа Фибоначчи "+ n + " равен " + n1);
+        System.out.println("Число Фибоначчи с порядковым номером " + n + " равен " + n1);
     }
 }
