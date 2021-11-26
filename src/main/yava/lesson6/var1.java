@@ -1,24 +1,26 @@
 package lesson6;
-    /* Заполните массив (длина запрашивается у пользователя через консоль)
-     * случайными числами, используя метод Math.random(), который возвращает
-     * значение в промежутке [0, 1]. Реализуйте 3 метода, расчитывающих
-     * минимальное, максимальное и среднее значения среди заполненных
-     * значений массива.
-     */
+
+/* Заполните массив (длина запрашивается у пользователя через консоль)
+ * случайными числами, используя метод Math.random(), который возвращает
+ * значение в промежутке [0, 1]. Реализуйте 3 метода, расчитывающих
+ * минимальное, максимальное и среднее значения среди заполненных
+ * значений массива.
+ */
+// это задание надо исправлять!!!
 
 import java.util.Scanner;
 import java.util.Arrays;
 import java.util.Random;
 
-public class lesson6 {
+public class var1 {
     public static void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Укажите длинну массива:");
-            int array1 = scanner.nextInt();
-            int n = 100;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Укажите длинну массива:");
+        int array1 = scanner.nextInt();
+        int n = 100;
 
-            int[] array = new int[100];
-            Random rnd = new Random();
+        int[] array = new int[100];
+        Random rnd = new Random();
 
         for (int i = 0; i < array.length; i++) {
             array[i] = rnd.nextInt(n+1);
