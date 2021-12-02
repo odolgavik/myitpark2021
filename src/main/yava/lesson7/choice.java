@@ -18,8 +18,15 @@ public class choice {
         cat.swim = "не умеет плавать";
         cat.wagtheTail = "злой";
 
-       // Animals tiger = new Animals("Тигр", "нет клички", 1500, 65, "6 км","волнение");
+       Animals tiger = new Animals("Тигр", "нет клички",1500, 65, "может проплыть 6 км","волнение");
 
         System.out.println(doc == cat);
+        System.out.println(doc.swim == tiger.swim);
+        System.out.println(doc.wagtheTail);
+
+        Animals [] animal = new Animals[] {cat, doc, tiger};
+        for (Animals animals : animal );
+        if (8 < cat.speed);
+        System.out.println("Это животное движется быстрее кошки" );
     }
 }
